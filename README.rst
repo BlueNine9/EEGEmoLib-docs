@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+EEGEmoLib
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
+This is a template
 
 https://docs.readthedocs.io/en/stable/tutorial/
