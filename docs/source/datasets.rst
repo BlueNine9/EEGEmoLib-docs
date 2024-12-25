@@ -12,7 +12,7 @@ We provide preprocessing classes for various datasets to preprocess the data bef
 
 - preprocess.deap_preprocess
 
-    Preprocessing for the\ `DEAP EEG dataset`_\ .
+    Preprocessing for the \ `DEAP EEG dataset`_\ .
 
 - preprocess.dreamer_preprocess
 
@@ -20,23 +20,23 @@ We provide preprocessing classes for various datasets to preprocess the data bef
 
 - preprocess.hci_preprocess
 
-    Preprocessing for the\ `HCI EEG dataset`_\ .
+    Preprocessing for the \ `HCI EEG dataset`_\ .
 
 - preprocess.mped_preprocess
 
-    Preprocessing for the\ `MPED EEG dataset`_\ .
+    Preprocessing for the \ `MPED EEG dataset`_\ .
 
 - preprocess.seed_preprocess
 
-    Preprocessing for the\ `SEED EEG dataset`_\ .
+    Preprocessing for the \ `SEED EEG dataset`_\ .
 
 - preprocess.seediv_preprocess
 
-    Preprocessing for the\ `SEED-IV EEG dataset`_\ .
+    Preprocessing for the \ `SEED-IV EEG dataset`_\ .
 
 - preprocess.seedv_preprocess
 
-    Preprocessing for the\ `SEED-V EEG dataset`_\ .
+    Preprocessing for the \ `SEED-V EEG dataset`_\ .
 
 .. _DEAP EEG dataset: https://www.eecs.qmul.ac.uk/mmv/datasets/deap/
 .. _HCI EEG dataset: https://mahnob-db.eu/hci-tagging/
