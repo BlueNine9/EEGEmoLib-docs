@@ -16,4 +16,8 @@ Contents
 .. toctree::
 
    usage
+   datasets
+   featureextraction
+   featureselection
+   models
    api

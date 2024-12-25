@@ -11,8 +11,3 @@ To use EEGEmoLib, first install it using pip:
 .. code-block:: console
 
    (.venv) $ pip install placeholder
-
-Creating Models
-----------------
-
-placeholder
