@@ -6,35 +6,35 @@ Preprocessing
 
 We provide preprocessing classes for various datasets to preprocess the data before training. These classes are listed below:
 
-- `preprocess.cas_preprocess`
+- ``preprocess.cas_preprocess``
   
     Preprocessing for the CAS EEG dataset.
 
-- `preprocess.deap_preprocess`
+- ``preprocess.deap_preprocess``
 
     Preprocessing for the \ `DEAP EEG dataset`_\ .
 
-- `preprocess.dreamer_preprocess`
+- ``preprocess.dreamer_preprocess``
 
     Preprocessing for the DREAMER EEG dataset.
 
-- `preprocess.hci_preprocess`
+- ``preprocess.hci_preprocess``
 
     Preprocessing for the \ `HCI EEG dataset`_\ .
 
-- `preprocess.mped_preprocess`
+- ``preprocess.mped_preprocess``
 
     Preprocessing for the \ `MPED EEG dataset`_\ .
 
-- `preprocess.seed_preprocess`
+- ``preprocess.seed_preprocess``
 
     Preprocessing for the \ `SEED EEG dataset`_\ .
 
-- `preprocess.seediv_preprocess`
+- ``preprocess.seediv_preprocess``
 
     Preprocessing for the \ `SEED-IV EEG dataset`_\ .
 
-- `preprocess.seedv_preprocess`
+- ``preprocess.seedv_preprocess``
 
     Preprocessing for the \ `SEED-V EEG dataset`_\ .
 

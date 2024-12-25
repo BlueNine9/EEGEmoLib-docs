@@ -20,4 +20,3 @@ Contents
    featureextraction
    featureselection
    models
-   api
