@@ -16,6 +16,7 @@ Contents
 .. toctree::
 
    usage
+   how_to_contribute
    datasets
    featureextraction
    featureselection
