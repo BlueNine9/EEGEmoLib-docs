@@ -4,10 +4,10 @@ How to Contribute
 This document describes how to contribute new models, feature extraction methods, and datasets to EEGEmoLib.
 
 New Models
-==========
+----------
 
 Model Input
------------
+~~~~~~~~~~~
 
 For most models, the input shape is ``[B, 1, C, F]``, where ``B`` denotes the batch size, ``C`` the number of channels, and ``F`` the feature length.
 
@@ -16,20 +16,20 @@ When constructing a model, we provide two arguments: ``num_classes`` and ``input
 Ideally, your model should be able to adaptively construct its architecture based on the provided ``input_shape``. If your model requires a fixed feature length, you should still make an effort to support a variable number of channels. If the provided ``input_shape`` is incompatible with your model, you should raise a clear error indicating the expected input format.
 
 Model Output
-------------
+~~~~~~~~~~~~
 
 We recommend that your model outputs logits with shape ``[B, num_classes]``. Tuple outputs are also supported, allowing you to return additional information. By default, EEGEmoLib uses the last element of the tuple as the classification output.
 
 If your model outputs a 3D tensor of shape ``[B, T, num_classes]``, EEGEmoLib will automatically apply ``mean(dim=1)``.
 
 Model Integration
------------------
+~~~~~~~~~~~~~~~~~
 
 1. Add a new file under ``src/eegemolib/models/``, e.g., ``MyNet.py``.
 2. Define the model class (the class name must match ``model.name`` in the configuration).
 
 Example: A Minimal Model MyNet
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -51,27 +51,27 @@ Example: A Minimal Model MyNet
            return self.net(x)
 
 New Feature Extraction Methods
-==============================
+------------------------------
 
 Input and Output
-----------------
+~~~~~~~~~~~~~~~~
 
 Typically, the input to a feature extraction method is a single-trial EEG signal with shape ``[channels, timesteps]``. In addition, an ``args`` dictionary is provided, which is configured via ``feature.args`` in the YAML file.
 
 Your feature extraction method should output a 3D tensor of shape ``[channels, windows, bands]``. If your method is band-independent, you may set the third dimension (bands) to 1.
 
 Compatibility Requirements
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want your method to support ``adaptive_band_weight``, the output must contain an interpretable bands dimension. Other than this, there are no strict compatibility requirements.
 
 Integration
------------
+~~~~~~~~~~~
 
 Add your function to ``src/eegemolib/preprocess/features.py``.
 
 Example: Adding an rms Feature
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -90,7 +90,7 @@ Example: Adding an rms Feature
        return out
 
 New Datasets
-============
+------------
 
 In principle, we do not recommend manually adding new datasets to EEGEmoLib. If you would like to include a new dataset, please open an issue and provide the dataset link. We will integrate it into EEGEmoLib accordingly.
 
@@ -102,7 +102,7 @@ Typically, adding a new dataset requires implementing two classes:
 2. **Dataset class** (loads cached data and returns batches during training)
 
 Required Methods
-----------------
+~~~~~~~~~~~~~~~~
 
 Preprocess Class: inherit from ``BasePreprocess``
 
@@ -131,7 +131,7 @@ Must implement:
 - ``__str__(self)``
 
 Example: Minimal Dataset Skeleton
----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
