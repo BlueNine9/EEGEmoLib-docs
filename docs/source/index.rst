@@ -6,6 +6,12 @@ Welcome to EEGEmoLib's documentation!
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
 
+Useful Links
+------------
+
+- `EEGEmoLib Homepage <https://eegemolib.github.io>`_
+- `EEGEmoLib on PyPI <https://pypi.org/project/eegemolib/>`_
+
 .. note::
 
    This project is under active development.
